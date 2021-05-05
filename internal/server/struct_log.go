@@ -3,6 +3,6 @@ package server
 import "sync"
 
 type Log struct {
-	mu      sync.Mutex
-	records []Record
+	Mu      sync.Mutex
+	Records []Record
 }
