@@ -11,3 +11,7 @@ func (c *Log) Append(record Record) (uint64, error) {
 	c.Records = append(c.Records, record)
 	return record.Offset, nil
 }
+
+func (c *Log) Read(offset uint64) (Record, error) {
+
+}
